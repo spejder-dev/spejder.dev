@@ -14,6 +14,9 @@
                 font-family: 'Roboto Mono';
                 src: url('/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
             }
+            * {
+                box-sizing: border-box;
+            }
             html {
                 background-color: #f9f9f9;
             }
@@ -23,11 +26,12 @@
             }
             .background-image {
                 position: absolute;
-                right: -5px;
-                top: -5px;
-                left: -5px;
-                width: calc(100vw + 5px);
-                height: calc(100vh + 5px);
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: calc(100vw);
+                height: calc(100vh);
                 object-fit: cover;
                 object-position: center center;
                 z-index: -1;
