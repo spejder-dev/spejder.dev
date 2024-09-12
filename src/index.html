@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <title>spejder.dev</title>
+        <meta name="description" content="Et fællesskab for spejdere interesseret i softwareudvikling, open source, og at bygge gode værktøjer til andre spejdere.">
+        <style type="text/css">
+            @font-face {
+                font-family: 'Roboto Slab';
+                src: url('/fonts/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+            }
+            @font-face {
+                font-family: 'Roboto Mono';
+                src: url('/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+            }
+            html {
+                margin: 0;
+            }
+            body {
+                font-family: 'Roboto Slab', serif;
+            }
+            main {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 3rem;
+            }
+            a {
+                text-underline-offset: 0.3125em;
+                text-decoration-thickness: 0.1em;
+                font-family: 'Roboto Mono', monospace;
+                transition: transform 0.2s;
+            }
+            a:hover {
+                transform: translateY(-0.1em) scale(1.05);
+            }
+
+            main h1 {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: normal;
+                font-size: 4rem;
+            }
+
+            .links {
+                display: flex;
+                flex-direction: row;
+                gap: 4rem;
+            }
+            .link {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+            .link a {
+                display: flex;
+                flex-direction: row;
+                gap: 0.5rem;
+            }
+            .link__note {
+                font-size: 0.8rem;
+            }
+            .link__icon {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>spejder.dev</h1>
+            <p>
+                Et fællesskab for spejdere interesseret i softwareudvikling, open source, og at bygge gode værktøjer til andre spejdere.
+            </p>
+            <div class="links">
+                <div class="link">
+                    <a href="https://spejderdev.slack.com/" target="_blank" rel="noopener">
+                        <img src="/images/slack.svg" alt="Slack chat" class="link__icon">
+                        <span>spejderdev.slack.com</span>
+                    </a>
+                    <div class="link__note">
+                        Anmod om invitation ved at sende en mail til
+                        <a href="mailto:niels+spejder.dev@deranged.dk?subject=Adgang%20til%20spejder.dev">niels+spejder.dev@deranged.dk</a>
+                    </div>
+                </div>
+                <div class="link">
+                    <a href="https://github.com/spejder-dev" target="_blank" rel="noopener">
+                        <img src="/images/github.svg" alt="Github organization" class="link__icon">
+                        <span>github.com/spejder-dev</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
