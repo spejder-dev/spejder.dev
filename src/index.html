@@ -13,10 +13,26 @@
                 src: url('/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
             }
             html {
-                margin: 0;
+                background-color: #f9f9f9;
             }
             body {
+                margin: 0;
                 font-family: 'Roboto Slab', serif;
+            }
+            .background-image {
+                position: absolute;
+                right: -5px;
+                top: -5px;
+                left: -5px;
+                width: calc(100vw + 5px);
+                height: calc(100vh + 5px);
+                object-fit: cover;
+                object-position: center center;
+                z-index: -1;
+                margin: 0;
+                mix-blend-mode: difference;
+                filter: blur(20px) saturate(500%) contrast(600%) opacity(0.15);
+                opacity: 0.4;
             }
             main {
                 min-height: 100vh;
@@ -40,6 +56,8 @@
                 font-family: 'Roboto Mono', monospace;
                 font-weight: normal;
                 font-size: 4rem;
+                color: #0b0b0b;
+                mix-blend-mode: color-burn;
             }
 
             .links {
@@ -67,6 +85,7 @@
         </style>
     </head>
     <body>
+        <img class="background-image" src="/images/owen-beard-K21Dn4OVxNw-unsplash.jpg">
         <main>
             <h1>spejder.dev</h1>
             <p>
